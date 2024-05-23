@@ -6,12 +6,12 @@ from .serializers import SoundPresetSerializer, UserProfileSerializer, VisualPre
 class SoundPresetViewSet(viewsets.ModelViewSet):
     queryset = SoundPreset.objects.all()
     serializer_class = SoundPresetSerializer
-    permission_classes = [IsAuthenticated]  # Add IsAuthenticated permission
+    permission_classes = [IsAuthenticated]  
 
 class UserProfileViewSet(viewsets.ModelViewSet):
     queryset = UserProfile.objects.all()
     serializer_class = UserProfileSerializer
-    permission_classes = [IsAuthenticated]  # Add IsAuthenticated permission
+    permission_classes = [IsAuthenticated]  
 
 class VisualPresetViewSet(viewsets.ModelViewSet):
     queryset = VisualPreset.objects.all()
